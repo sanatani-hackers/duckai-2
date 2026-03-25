@@ -1,0 +1,13 @@
+# render.yaml
+services:
+  - type: web
+    name: duckai
+    runtime: node
+    buildCommand: |
+      curl -fsSL https://bun.sh/install | bash
+      ~/.bun/bin/bun install
+    startCommand: ~/.bun/bin/bun run start
+    envVars:
+      - key: PORT
+        value: 3000
+    plan: free
