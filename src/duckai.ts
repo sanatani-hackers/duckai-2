@@ -464,12 +464,11 @@ export class DuckAI {
 
   getAvailableModels(): string[] {
     return [
-      "gpt-4o-mini",
-      "gpt-5-mini",
-      "claude-3-5-haiku-latest",
-      "meta-llama/Llama-4-Scout-17B-16E-Instruct",
-      "mistralai/Mistral-Small-24B-Instruct-2501",
-      "openai/gpt-oss-120b"
+        "claude-haiku-4-5",
+        "claude-3-5-sonnet",
+        "gpt-4o-mini",
+        "llama-3-3-70b",
+        "mistral-8x7b"
     ];
   }
 }
